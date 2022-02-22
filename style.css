@@ -1,0 +1,114 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.navbar {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.hero {
+    background-color: #F1F3FF;
+    position: relative;
+    align-items: center;
+    margin: 0;
+}
+
+.hero .hero-text {
+    margin: 5%;
+}
+
+.hero .hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    margin: 5%;
+}
+
+.desc h2 {
+    text-align: center;
+}
+
+.desc ul {
+    margin-block: 0;
+    display: table;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.desc li {
+    list-style: none;
+    background-image: url(./img/Check.png);
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+@media (min-width: 992px) {
+
+    h1 {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        height: 480px;
+    }
+
+    .hero .hero-text {
+        margin-left: 8%;
+    }
+
+    .hero h1 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .hero .hero-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    .desc {
+        display: flex;
+    }
+}

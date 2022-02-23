@@ -19,6 +19,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+h4 {
+    font-size: 14px;
+    margin-top: 20px;
+}
 
 .navbar {
     padding-left: 8%;
@@ -62,6 +66,26 @@ h3 {
     background-repeat: no-repeat;
     line-height: 30px;
     padding-left: 30px;
+}
+
+.why-us {
+    margin: 5%;
+}
+
+.list-item {
+    margin: 20px;
+}
+
+.list-item .item {
+    border: 2px solid #D0D0D0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.list-item .item h3 {
+    font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -116,4 +140,37 @@ h3 {
         padding-left: 50px;
         margin-top: 5px;
     }
+
+    .list-item .item {
+        max-width: 23%;
+        /* -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+    }
+
+
+    /* @-webkit-keyframes slide-left {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+        }
+    }
+
+    @keyframes slide-left {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+        }
+    } */
+
+
 }

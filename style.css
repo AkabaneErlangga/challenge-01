@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -31,13 +36,16 @@ p {
 .navbar {
     padding-left: 8%;
     padding-right: 8%;
+    z-index: 9;
+    background-color: #F1F3FF;
 }
 
 .hero {
     background-color: #F1F3FF;
     position: relative;
     align-items: center;
-    margin: 0;
+    margin-top: -300px;
+    padding-top: 280px;
 }
 
 .hero .hero-text {
@@ -106,24 +114,14 @@ p {
 }
 
 .testimony {
-    margin: 0 5% 0 5%;
-    overflow-x: hidden;
-}
-
-.testimony .list-testi {
-    display: flex;
-    width: fit-content;
-    flex-wrap: nowrap;
-    margin-left: 5%;
+    text-align: center;
 }
 
 .testimony .testi {
-    width: 250px;
-    margin-right: 10px;
-    margin-bottom: 15px;
     background-color: #F1F3FF;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    margin-right: 20px;
 }
 
 .testimony .testi img {
@@ -134,8 +132,22 @@ p {
     color: #F9CC00;
 }
 
+.testimony .carousel-btn {
+    background-color: #fff;
+    border: #C4C4C4 solid 1px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testimony .carousel-btn:hover {
+    background-color: #5CB85F;
+}
+
 .faq {
-    margin: 20px 5% 0 5%;
+    margin: 5%;
 }
 
 .faq h2 {
@@ -165,6 +177,15 @@ p {
     margin: 20px 5% 0 5%;
 }
 
+#scrollUp {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
 @media (min-width: 992px) {
 
     h1 {
@@ -184,7 +205,9 @@ p {
     }
 
     .hero {
-        height: 480px;
+        margin-top: -55px;
+        padding-top: 55px;
+        height: 530px;
     }
 
     .hero .hero-text {
@@ -227,16 +250,6 @@ p {
     .banner {
         margin: 0 8% 0 8%;
         border-radius: 8px;
-    }
-
-    .testimony .list-testi {
-        display: flex;
-        width: fit-content;
-        margin-left: 0;
-    }
-
-    .testimony .testi {
-        width: 25%;
     }
 
     .footer {

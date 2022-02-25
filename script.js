@@ -15,9 +15,11 @@ function backToUp() {
 $(document).ready(function () {
     $('.list-testi').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1.6,
         slidesToScroll: 1,
         centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
         responsive: [
